@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    width: 60vw;
+    height: 100vh;
+    border: none;
+    /* margin-top: 20px; */
+    margin: 20px auto;
+    box-shadow: 0px 0px 5px rgb(74, 72, 72);
+}
+.txt{
+    display: flexbox;
+    height: 100vh;
+    top: 0px;
+    border: none;
+    outline: none;
+    /* padding-top: 0px; */
+    width: 50vw;
+    margin-left: 5vw;
+}
