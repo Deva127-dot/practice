@@ -1,0 +1,44 @@
+.main{
+    width: 15%;
+    background-color: cornflowerblue;
+    padding: 50px 30px;
+    margin: 30vh auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'cambria';
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+}
+.inputBox{
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 3px black;
+    background-color: white;
+}
+.inputBox:hover{
+    background-color: rgb(255, 240, 240);
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(0, 0, 176);
+    color: azure;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(9, 255, 0);
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: 'cambria';
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: rgb(0, 0, 71);
+}
