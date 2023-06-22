@@ -11,10 +11,12 @@ import UpdatedGDoc from './Google Doc/UpdatedGDoc';
 import GDoc2 from './Google Doc/GDoc2';
 import LoginForm from './Free Time Practice/LoginForm';
 import Practice2A from './Practice Day 2.1/Practice2A';
+import Props from './components/Props/Props';
+import data from './Information.json'
 
 export default function App() {
   return (
-    <>
+    <div className='app_main'>
       {/* <GoogleDoc /> */}
       {/* <UpdatedGDoc/> */}
       {/* <GDoc2/> */}
@@ -25,7 +27,21 @@ export default function App() {
       {/* <PracticeProps /> */}
       {/* <PracticeProps2/> */}
       {/* <LoginForm/> */}
-      <Practice2A/>
-          </>
+      {/* <Practice2A/> */}
+      <p className='para'>Information</p>
+      {
+          data.map((item)=>{
+            return(
+            <Props 
+              id={item.id}
+              fName={item.first_name}
+              lName={item.last_name}
+              email={item.email}
+              gender={item.gender}
+            />
+            )
+          })
+        }
+          </div>
   );
 }

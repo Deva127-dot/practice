@@ -16,19 +16,21 @@ function Practice2A() {
       let capital = txt.toLowerCase()
       setTxt(capital)
     }
-    const handleChange3=()=>{
-      let capital = <b>txt</b>
-      setTxt(capital)
-    }
 
   return (
+    <>
     <div>
     <h3>Text Analyzer</h3>
       <textarea cols="80" rows="20" value={txt} onChange={changeChar}/>
       <button onClick={handleChange}>To Upper Case</button>
       <button onClick={handleChange2}>To Lower Case</button>
-      <button onClick={handleChange3}>Bold</button>
     </div>
+    <div>
+      in this box {txt.split(" ").length} words and {txt.length} characters
+      <p>abc {txt.capitalization} </p>
+
+    </div>
+    </>
   )
 }
 
