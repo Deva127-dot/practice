@@ -1,0 +1,33 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+    transition: 0.2s;
+}
+.btn:hover{
+    transform: scale(1.08);
+    box-shadow: 0px 0px 20px black;
+    background-color: rgb(45, 116, 248);
+}
+.para{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'cambria';
+}

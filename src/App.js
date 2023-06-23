@@ -13,6 +13,7 @@ import LoginForm from './Free Time Practice/LoginForm';
 import Practice2A from './Practice Day 2.1/Practice2A';
 import Props from './components/Props/Props';
 import data from './Information.json'
+import Conditional from './components/ConditionalRendering/Conditional';
 
 export default function App() {
   return (
@@ -28,20 +29,23 @@ export default function App() {
       {/* <PracticeProps2/> */}
       {/* <LoginForm/> */}
       {/* <Practice2A/> */}
-      <p className='para'>Information</p>
-      {
-          data.map((item)=>{
-            return(
+      {/* <p className='para'>Information</p> */}
+      {/* {
+        data.map((item, index)=>{
+          return(
             <Props 
+              key={index}
               id={item.id}
-              fName={item.first_name}
-              lName={item.last_name}
+              img={item.image}
+              f_name={item.first_name}
+              l_name={item.last_name}
               email={item.email}
               gender={item.gender}
             />
-            )
-          })
-        }
+          )
+        })
+      } */}
+      <Conditional/>
           </div>
   );
 }
